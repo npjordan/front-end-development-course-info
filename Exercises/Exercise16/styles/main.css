@@ -40,6 +40,24 @@ section > section > div{
     float:left;
     width:33%;
 }
+
+
+.part-1 a[target] {
+     color: blue;
+}
+
+.part-1 input[value] {
+    background-color: pink;
+}
+
+.part-1 input[type="checkbox"] {
+    background-color: yellow;
+}
+
 .part3{
     display:none;
+}
+
+a[href="https://google.com"], a[href="http://uark.edu"], a[href="https://walmart.com"] {
+    cursor: default;
 }
