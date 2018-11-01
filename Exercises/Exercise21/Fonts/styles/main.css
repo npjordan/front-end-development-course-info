@@ -55,3 +55,6 @@ section {
     text-decoration: none;
     display: inline-block;
 }
+.container nav i {
+    float:right;
+}
