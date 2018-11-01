@@ -32,6 +32,7 @@ a:hover {
 
 .main-container {
     margin: 0 auto;
+    max-width: 960px;
 }
 
 .main-header {
@@ -50,8 +51,11 @@ a:hover {
 }
 
 .hero img {
+    display: block;
     width: 100%;
-    height: auto
+    max-width: 620px;
+    height: auto;
+    margin: 0 auto;
 }
 
 section {
@@ -103,10 +107,63 @@ footer>h3 {
     margin: 0
 }
 
-footer>nav {
-}
+footer>nav {}
 
 footer>nav>a {
     padding: 0 10px;
-    display:block;
+    display: block;
+}
+
+@media screen and (min-width:560px) {
+    .article-list article {
+        overflow: hidden;
+    }
+    .article-list article img {
+        float: left;
+        width: auto;
+    }
+}
+
+@media screen and (min-width:650px) {
+    .main-header nav {
+        text-align: center;
+    }
+    .main-header nav a {
+        display: inline-block;
+    }
+
+    .sponsors>.sponsor-ads>img {
+        width: 25%;
+    }
+
+
+    footer>h3 {
+        float: left;
+    }
+    footer>nav {
+        float: right;
+    }
+    footer>nav>a {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width:720px) {
+
+    .main-header nav {
+        border-radius:25px;
+    }
+    .article-list {
+        float: left;
+        width: 70%;
+    }
+
+    .sponsors>.sponsor-ads>img {
+        width: 50%;
+    }
+
+    .main-container aside {
+        float:right;
+        width:30%;
+    }
 }
