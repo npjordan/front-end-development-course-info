@@ -13,12 +13,12 @@
     </head>
 
     <body>
-        <div>
-            <header>
-                <div>
+        <div class="container">
+            <header class="row">
+                <div class="col-md-4">
                     <img src="logo.svg" alt="">
                 </div>
-                <div>
+                <div class="col-md-8">
                     <nav>
                         <a href="#">Animals</a>
                         <a href="#">Architecture</a>
@@ -28,73 +28,79 @@
                 </div>
 
             </header>
-            <section>
-                <div>
-                    <img src="https://placeimg.com/1200/480/any" alt="">
+
+            <section class="row">
+                <div class="col-12">
+                    <img src="https://placeimg.com/1200/480/any" alt="" class="d-block w-100">
+                    <!-- <img src="https://placeimg.com/100/480/any" alt="" class="d-block w-100"> -->
                 </div>
             </section>
             <!-- Start Cards -->
-            <div>
+            <div class="row">
                 <!-- Card -->
-                <div>
-                    <div>
-                        <img src="https://placeimg.com/640/480/animals">
-                        <div>
-                            <h4>Animals</h4>
-                            <a href="#">View Animals</a>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top"src="https://placeimg.com/640/480/nature">
+                        <div class="card-body">
+                            <h4 class="card-title">Animals</h4>
+                            <a href="#" class="btn btn-secondary">View Animals</a>
                         </div>
                     </div>
                 </div>
-                <!-- Card -->
-                <div>
-                    <div>
-                        <img src="https://placeimg.com/640/480/arch">
-                        <div>
-                            <h4>Architecture</h4>
-                            <a href="#">View Architecture</a>
+                <div class="col-md-6  col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top"src="https://placeimg.com/640/480/nature">
+                        <div class="card-body">
+                            <h4 class="card-title">Animals</h4>
+                            <a href="#" class="btn btn-danger">View Animals</a>
                         </div>
                     </div>
+                </div>
+                <div class="col-md-6  col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top"src="https://placeimg.com/640/480/nature">
+                        <div class="card-body">
+                            <h4 class="card-title">Animals</h4>
+                            <a href="#" class="btn btn-warning">View Animals</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6  col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top"src="https://placeimg.com/640/480/nature">
+                        <div class="card-body">
+                            <h4 class="card-title">Animals</h4>
+                            <a href="#" class="btn btn-primary">View Animals</a>
+                        </div>
+                    </div>
+                </div>
+       
 
-                </div>
-                <!-- Card -->
-                <div>
-                    <div>
-                        <img src="https://placeimg.com/640/480/tech">
-                        <div>
-                            <h4>Technology</h4>
-                            <a href="#">View Technology</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card -->
-                <div>
-                    <div>
-                        <img src="https://placeimg.com/640/480/nature">
-                        <div>
-                            <h4>Nature</h4>
-                            <a href="#">View Nature</a>
-                        </div>
-                    </div>
-                </div>
+
+
 
             </div>
             <!-- Start Form -->
             <div>
-                <form>
-                    <div>
-                        <label for="formYourName">Name</label>
-                        <input type="text" id="formYourName" placeholder="Your Name">
+                <form id="frmMyForm">
+                    <div class="form-group">
+                        <label class="col-form-label" for="formYourName">Name</label>
+                        <input class="form-control" type="text" id="formYourName" placeholder="Your Name" required>
+                        <div class="invalid-feedback">
+                            this is required
+                        </div>
                     </div>
-                    <div>
-                        <label for="formEmail">Email</label>
-                        <input type="text" id="formEmail" placeholder="Your Email">
+                    <div class="form-group">
+                        <label class="col-form-label" for="formYourName2">Name</label>
+                        <input class="form-control" type="text" id="formYourName2" placeholder="Your Name" required>
                     </div>
-                    <div>
-                        <label for="formMessage">Message</label>
-                        <textarea id="formMessage" placeholder="Your Message"></textarea>
+                     <div class="form-group">
+                        <label class="col-form-label" for="formYourName1">Name</label>
+                        <input class="form-control" type="text" id="formYourName1" placeholder="Your Name" required>
                     </div>
-                    <div>
-                        <button type="button" id="btnSubmit">Go somewhere</button>
+ 
+                   <div>
+                        <button type="button" id="btnSubmit" class="btn btn-primary">Go somewhere</button>
                     </div>
 
                 </form>
@@ -108,7 +114,7 @@
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
             crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
             crossorigin="anonymous"></script>
